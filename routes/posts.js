@@ -1,3 +1,4 @@
+// Importing express and router
 const express = require('express');
 const router = express.Router();
 
@@ -46,7 +47,6 @@ router.get('/:postId', async (req, res) => {
         res.json({message: err});
     }
 });
-
 
 // PATCH (update data)
 router.patch('/:postId', async (req, res) => {
