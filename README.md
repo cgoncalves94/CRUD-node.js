@@ -1,20 +1,7 @@
-# Project Title
+# CRUD with Node.js  
 
 A simple Node.js application using Express and MongoDB.
 
-## Installation
-
-\```bash
-npm install
-\```
-
-## Usage
-
-To start the server:
-
-\```bash
-npm start
-\```
 
 ## Files
 
