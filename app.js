@@ -29,9 +29,6 @@ app.get('/', (req, res) => {
     res.send('Homepage');
 });
 
-// Log the connection string for debugging purposes (remove this once verified!)
-console.log("Connecting to:", process.env.DB_CONNECTOR);
-
 // Mongoose connection to MongoDB
 mongoose.connect(process.env.DB_CONNECTOR)
     .then(() => {
