@@ -12,8 +12,8 @@ A simple Node.js application using Express and MongoDB.
 ## Endpoints
 
 - **GET** `/posts`: Retrieves a list of posts.
-- **POST** `/posts`: Creates a new post.
 - **GET** `/posts/:postId`: Gets a post by its ID.
+- **POST** `/posts`: Creates a new post.
 - **PATCH** `/posts/:postId`: Updates a post by its ID.
 - **DELETE** `/posts/:postId`: Deletes a post by its ID.
 
