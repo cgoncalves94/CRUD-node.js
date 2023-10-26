@@ -31,7 +31,7 @@ mongoose.connect(process.env.DB_CONNECTOR)
     .catch((err) => {
         console.error('Error connecting to MongoDB', err);
     });
-               
+    
 // Server listening
 app.listen(3000, () => {
     console.log('server is up and running');
