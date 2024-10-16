@@ -1,18 +1,24 @@
 
-module.exports = {
-  languageOptions: {
-    globals: {
-      // Define your global variables here
-      browser: true,
-      es2021: true,
+const eslintConfig = [
+  {
+    languageOptions: {
+      globals: {
+        browser: true,
+        es2021: true,
+      },
+    },
+    parserOptions: {
+      ecmaVersion: 12,
+      sourceType: 'module',
+    },
+    rules: {
+      // Your custom rules can be added here
     },
   },
-  extends: 'eslint:recommended',
-  parserOptions: {
-    ecmaVersion: 12,
-    sourceType: 'module',
+  // Include ESLint recommended configuration directly
+  {
+    extends: 'eslint:recommended',
   },
-  rules: {
-    // Your custom rules can be added here
-  },
-};
+];
+
+export default eslintConfig;
