@@ -1,9 +1,9 @@
-export default [
+module.exports = [
   {
-    files: ["**/*.js"],  // Apply to all JavaScript files
+    files: ["**/*.js"],
     languageOptions: {
-      ecmaVersion: 12,  // Still supports ES2021
-      sourceType: 'script',  // Set to 'script' for CommonJS
+      ecmaVersion: 12,
+      sourceType: 'script',  // CommonJS
       globals: {
         require: "readonly",
         module: "readonly",
