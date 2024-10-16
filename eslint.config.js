@@ -1,7 +1,5 @@
 
-const { defineConfig } = require('eslint');
-
-module.exports = defineConfig({
+module.exports = {
   languageOptions: {
     globals: {
       // Define your global variables here
@@ -17,4 +15,4 @@ module.exports = defineConfig({
   rules: {
     // Your custom rules can be added here
   },
-});
+};
