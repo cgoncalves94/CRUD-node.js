@@ -1,24 +1,20 @@
 
-const eslintConfig = [
+// eslint.config.js (Flat Config)
+import eslintRecommended from 'eslint/conf/eslint-recommended'; // Importing the ESLint recommended rules
+
+export default [
+  eslintRecommended,  // Directly including the recommended config object
   {
     languageOptions: {
+      ecmaVersion: 'latest', // Set ECMAScript version
+      sourceType: 'module',  // Use 'module' for ES Modules
       globals: {
-        browser: true,
+        browser: true,       // Define global variables
         es2021: true,
       },
     },
-    parserOptions: {
-      ecmaVersion: 12,
-      sourceType: 'module',
-    },
     rules: {
-      // Your custom rules can be added here
+      // Add your custom rules here
     },
-  },
-  // Include ESLint recommended configuration directly
-  {
-    extends: 'eslint:recommended',
   },
 ];
-
-export default eslintConfig;
