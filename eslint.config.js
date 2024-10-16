@@ -1,9 +1,10 @@
-module.exports = [
+// eslint.config.js
+export default [
   {
     files: ["**/*.js"],
     languageOptions: {
       ecmaVersion: 12,
-      sourceType: 'script',  // CommonJS
+      sourceType: 'module',  // Use 'module' for ES modules
       globals: {
         require: "readonly",
         module: "readonly",
@@ -13,7 +14,7 @@ module.exports = [
     },
     rules: {
       "no-unused-vars": "warn",
-      "no-undef": "off",  // Turn off no-undef rule for CommonJS
+      "no-undef": "off",  // Turn off no-undef rule for Node.js globals like 'require'
     },
   },
 ];
