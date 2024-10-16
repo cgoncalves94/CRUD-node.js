@@ -1,20 +1,17 @@
-
-// eslint.config.js (Flat Config)
-import eslintRecommended from 'eslint/conf/eslint-recommended'; // Importing the ESLint recommended rules
-
 export default [
-  eslintRecommended,  // Directly including the recommended config object
   {
+    files: ["**/*.js"],  // Apply to all JavaScript files
     languageOptions: {
-      ecmaVersion: 'latest', // Set ECMAScript version
-      sourceType: 'module',  // Use 'module' for ES Modules
+      ecmaVersion: 12,  // Equivalent to ES2021
+      sourceType: 'module',
       globals: {
-        browser: true,       // Define global variables
-        es2021: true,
+        browser: true,  // Example of global variables
       },
     },
     rules: {
-      // Add your custom rules here
+      // ESLint's recommended rules
+      "no-unused-vars": "warn",  // Example custom rule
+      "no-undef": "error",
     },
   },
 ];
