@@ -1,28 +1,29 @@
+
 name: Lint
 
 on: 
   push:
     branches:
-      - main
+      - main  # Triggers the workflow on pushes to the main branch
   pull_request:
     branches:
-      - main
+      - main  # Triggers the workflow on pull requests targeting the main branch
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Specifies the OS for the runner
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2  # Checks out the repository code to the runner
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v2  # Sets up Node.js environment
       with:
-        node-version: '14'  # or your preferred Node.js version
+        node-version: '14'  # Specifies the Node.js version to use (can be changed)
 
     - name: Install dependencies
-      run: npm install
+      run: npm install  # Installs project dependencies listed in package.json
 
     - name: Run ESLint
-      run: npx eslint .  # Adjust the path if you want to lint specific directories
+      run: npx eslint .  # Runs ESLint to lint the codebase; adjust the path if needed
