@@ -1,7 +1,7 @@
 {
   "name": "minipost-app",
   "version": "1.0.0",
-  "type": "module",  // This enables ES module support
+  "type": "module",
   "scripts": {
     "start": "nodemon app.js",
     "lint": "eslint ."
