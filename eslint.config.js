@@ -1,7 +1,7 @@
 
-import { defineConfig } from 'eslint';
+const { defineConfig } = require('eslint');
 
-export default defineConfig({
+module.exports = defineConfig({
   languageOptions: {
     globals: {
       // Define your global variables here
