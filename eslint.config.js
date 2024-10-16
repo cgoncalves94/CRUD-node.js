@@ -1,7 +1,13 @@
-module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
+
+import { defineConfig } from 'eslint';
+
+export default defineConfig({
+  languageOptions: {
+    globals: {
+      // Define your global variables here
+      browser: true,
+      es2021: true,
+    },
   },
   extends: 'eslint:recommended',
   parserOptions: {
@@ -11,4 +17,4 @@ module.exports = {
   rules: {
     // Your custom rules can be added here
   },
-};
+});
