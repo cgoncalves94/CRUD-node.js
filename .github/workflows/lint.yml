@@ -20,7 +20,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2  # Sets up Node.js environment
       with:
-        node-version: '14'  # Specifies the Node.js version to use (can be changed)
+        node-version: '18'  # Updated to a more recent Node.js version
 
     - name: Install dependencies
       run: npm install  # Installs project dependencies listed in package.json
